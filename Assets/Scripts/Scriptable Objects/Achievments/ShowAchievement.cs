@@ -10,6 +10,11 @@ public class ShowAchievement : MonoBehaviour
         StartCoroutine(Timer());
     }
 
+    private void Update()
+    {
+        gameObject.transform.Translate(0, 1 * Time.deltaTime, 0);
+    }
+
     IEnumerator Timer()
     {
         yield return new WaitForSeconds(3);

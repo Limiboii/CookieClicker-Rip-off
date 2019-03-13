@@ -20,7 +20,7 @@ public class DonateCookies : MonoBehaviour
     {
         donatedCookies += GameController1.cookies;
         GameController1.cookies = 0;
-        if (donatedCookies >= 1000000)
+        if (donatedCookies >= 100000000)
             DonateEnoughCookies?.Invoke();
         donatedCookiesText.text = "You have donated: " + donatedCookies;
     }

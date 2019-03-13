@@ -64,7 +64,7 @@ public class ItemDisplay : MonoBehaviour
                 timesBought += 1;
 
                 costOnHold += cost * item.costMultiplier;
-                cost += (ulong)Mathf.Floor(costOnHold);
+                cost = (ulong)Mathf.Floor(costOnHold);
                 costOnHold = costOnHold % 1;
 
                 if (item.gokuAchievementAvailable)

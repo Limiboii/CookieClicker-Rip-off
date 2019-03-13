@@ -32,6 +32,7 @@ public class AchievementCheck : MonoBehaviour
 
     //Spawnpoint för alla pop-ups.
     public GameObject SpawnPoint;
+    float timer;
 
     private void Start()
     {
@@ -89,9 +90,7 @@ public class AchievementCheck : MonoBehaviour
     {
         if (gokuAchievementLeft)
         {
-            Instantiate(gokuPopUp, SpawnPoint.transform);
-            otherDisplays[1].SetActive(true);
-            gokuAchievementLeft = false;
+            StartCoroutine(GoGoku());
         }
     }
 
@@ -119,5 +118,13 @@ public class AchievementCheck : MonoBehaviour
             otherDisplays[3].SetActive(true);
             donateAchievementLeft = false;
         }
+    }
+
+    IEnumerator GoGoku()
+    {
+        yield return new WaitForSeconds(1);
+        Instantiate(gokuPopUp, SpawnPoint.transform);
+        otherDisplays[1].SetActive(true);
+        gokuAchievementLeft = false;
     }
 }
