@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f09c7b9730e1f44afd00e5cfd1da54, type: 3}
+  m_Name: 1st
+  m_EditorClassIdentifier: 
+  totalCookiesNeeded: 7
+  achievementPopUp: {fileID: 8842691240770699853, guid: a72eb198f69cc8a479e6ec48ae5333e6,
+    type: 3}
